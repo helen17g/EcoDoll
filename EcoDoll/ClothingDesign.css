@@ -1,0 +1,678 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
+  padding: 5%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  text-overflow: wrap;
+  /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 8%;
+  height: 200%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.logos {
+  width: 50%;
+  height: 50%;
+}
+
+h6 {
+  font-size: 100%;
+  padding-bottom: 0%;
+}
+
+.rating {
+  width: 60%;
+  height: 60%;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.product-title {
+  margin: 0.5rem 0;
+}
+
+.product-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.product-price {
+  color: #333;
+  font-weight: bold;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /* Existing CSS ... */
+
+  .product-item img {
+    /* max-width: 100%;
+    height: auto; */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  padding-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 30vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-img {
+  height: 180px;
+  width: 180px;
+}
+
+.h21 {
+  color: #d9359a;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #d9359a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #d9359a;
+  margin: 5px;
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width:1024px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.icon-img {
+  width: 5vh;
+  height: 5vh;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #d9359a;
+  color: white;
+  padding: 16px;
+  border-radius: 10%;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #DB5972;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #DB5972;
+}
+
+.productImg {
+  width: 35vh;
+  height: 40vh;
+}
+
+.headerBanner {
+  background-color: #d9359a;
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.headerText {
+  font-size: 40vh;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.container .chart-container {
+  padding: 10px;
+}
+
+.container .chart-container .back {
+  stroke: #f3bfdf;
+  stroke-width: 10;
+}
+
+.container .chart-container .front {
+  stroke: #d9359a;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 234;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.container .chart-container .text {
+  font-size: 32px;
+  fill: #d9359a;
+}
+
+@keyframes fill {
+  to {
+    stroke-dasharray: 0, 1000000;
+  }
+}
+
+
+@keyframes display {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.front {
+  animation: fill 2s reverse;
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(30%);
+  animation: display 2s forwards;
+}
+
+/* .button1 {
+  border-radius: 15%;
+  background-color: #DB5972;
+  color: #ffffff;
+  padding: 10%;
+  width: 220px;
+  height: 60px;
+  background-position: left top; */
+
+.button1 {
+  border-radius: 30px;
+  background-color: #DB5972;
+  color: #ffffff;
+  padding: 10px;
+  width: 110px;
+  height: 60px;
+  background-position: left top;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* Removes underline from links */
+  display: inline-block;
+  /* Allows setting width and height */
+  margin-right: 10px;
+  /* Adds some space between the buttons */
+}
+
+.Button3 {
+  font-family: 'Poppins', sans-serif;
+  width: 220px;
+  height: 60px;
+  border: 2px solid #d9359a;
+  color: #d9359a;
+  outline: none;
+  background-color: inherit;
+  transition: ease-out 0.3s;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-left: 15%;
+}
+
+.Button3:hover {
+  color: #d9359a;
+  cursor: pointer;
+}
+
+.Button3:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: white;
+}
+
+.Button3:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.container1 .chart-container {
+  padding: 10px;
+}
+
+.container1 .chart-container .back {
+  stroke: #f3bfdf;
+  stroke-width: 10;
+}
+
+.container1 .chart-container .front {
+  stroke: #d9359a;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 200;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.container1 .chart-container .text {
+  font-size: 32px;
+  fill: #d9359a;
+}
+
+@keyframes fill {
+  to {
+    stroke-dasharray: 0, 1000000;
+  }
+}
+
+
+@keyframes display {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.front {
+  animation: fill 2s reverse;
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(30%);
+  animation: display 2s forwards;
+}
+
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.container2 .chart-container {
+  padding: 10px;
+}
+
+.container2 .chart-container .back {
+  stroke: #f3bfdf;
+  stroke-width: 10;
+}
+
+.container2 .chart-container .front {
+  stroke: #d9359a;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 150;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.container2 .chart-container .text {
+  font-size: 32px;
+  fill: #d9359a;
+}
+
+@keyframes fill {
+  to {
+    stroke-dasharray: 0, 1000000;
+  }
+}
+
+
+@keyframes display {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.front {
+  animation: fill 2s reverse;
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(30%);
+  animation: display 2s forwards;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.container4 .chart-container {
+  padding: 10px;
+}
+
+.container4 .chart-container .back {
+  stroke: #f3bfdf;
+  stroke-width: 10;
+}
+
+.container4 .chart-container .front {
+  stroke: #d9359a;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 150;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.container4 .chart-container .text {
+  font-size: 32px;
+  fill: #d9359a;
+}
+
+@keyframes fill {
+  to {
+    stroke-dasharray: 0, 1000000;
+  }
+}
+
+
+@keyframes display {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.front {
+  animation: fill 2s reverse;
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(30%);
+  animation: display 2s forwards;
+}
