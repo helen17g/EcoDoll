@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="ClothingDesign.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-img" src="photos/logo.png" alt="logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="AboutUs.html" class="hover">ABOUT US</a>
+      </li>
+      <li>
+        <a href="clothesCatalog.html" class="hover">WOMENS</a>
+      </li>
+      <li>
+        <a href="Contact.html" class="hover">MENS</a>
+      </li>
+
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"> </div>
+    </div>
+    <img class="icon-img" src="photos/shopping-cart.png">
+  </nav>
+
+  <script src="script.js"></script>
+
+  <div class="headerBanner">
+    <div class="headerText">
+      WOMEN
+    </div>
+  </div>
+
+  <h1> </h1>
+
+
+
+  <div class="dropdown">
+    <button class="dropbtn"> Price</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="filterSelection('all')">$$$</a>
+      <a href="#" onclick="filterSelection('med')" onclick="filterSelection('low')">$$</a>
+      <a href="#" onclick="filterSelection('low')">$</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"> Sustainability</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="filterSelection('all')">$$$</a>
+      <a href="#" onclick="filterSelection('med')" onclick="filterSelection('low')">$$</a>
+      <a href="#" onclick="filterSelection('low')">$</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Product</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="filterSelection('all')">$$$</a>
+      <a href="#" onclick="filterSelection('med')" onclick="filterSelection('low')">$$</a>
+      <a href="#" onclick="filterSelection('low')">$</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Color</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="filterSelection('all')">$$$</a>
+      <a href="#" onclick="filterSelection('med')" onclick="filterSelection('low')">$$</a>
+      <a href="#" onclick="filterSelection('low')">$</a>
+    </div>
+  </div>
+
+
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column med">
+      <div class="content">
+        <img class="productImg" src="assets/kotnShirt.png" alt="Nature">
+        <h4>The Organic Cotton Cutaway Tank</h4>
+        <img class="rating" src="assets/5-stars.png">
+        <img class="logos" src="assets/Everlane_logo.png">
+        <h6 id="sus">sustainability score:</h6>
+        <div class='container'>
+          <svg width='200' height='150' class='chart-container'>
+            <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+            <circle cx='95' cy='35' r='50' class='front' fill='none' />
+            <g class='text'>
+              <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>65%</text>
+            </g>
+          </svg>
+        </div>
+
+        <h6>price: $30.00</h6>
+
+        <div class="buttonBlock">
+          <a href="https://www.everlane.com/products/womens-organic-cotton-cutaway-tank-heather-grey"><button
+              class=" Button3">GO</button></a>
+        </div>
+
+
+
+      </div>
+
+      <div class="column high">
+        <div class="content">
+          <img class="productImg" src="assets/EverlaneSweater1.png" alt="Lights">
+          <h4>The Alpaca Crew</h4>
+          <img class="rating" src="assets/4-stars.png">
+          <img class="logos" src="assets/Everlane_logo.png">
+          <h6 id="sus">sustainability score: </h6>
+          <div class='container'>
+            <svg width='200' height='150' class='chart-container'>
+              <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+              <circle cx='95' cy='35' r='50' class='front' fill='none' />
+              <g class='text'>
+                <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>61%</text>
+              </g>
+            </svg>
+          </div>
+
+          <h6>Price: $118.00</h6>
+
+          <div class="buttonBlock">
+            <a href="https://www.everlane.com/products/womens-alpaca-crew-cafe-creme"><button
+                class=" Button3">GO</button></a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="content" class="column high">
+        <img class="productImg" src="assets/EverlaneCardigain.png" alt="cardigan" style="width:100%">
+        <h4>The Cashmere Cardigan</h4>
+        <img class="rating" src="assets/5-stars.png">
+        <img class="logos" src="assets/Everlane_logo.png">
+        <h6 id="sus">sustainability score:</h6>
+        <div class='container'>
+          <svg width='200' height='150' class='chart-container'>
+            <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+            <circle cx='95' cy='35' r='50' class='front' fill='none' />
+            <g class='text'>
+              <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>60%</text>
+            </g>
+          </svg>
+        </div>
+        <h6>Price: $160.00</h6>
+
+        <div class="buttonBlock">
+          <a href="https://www.everlane.com/products/womens-recashmere-cropped-cardigan-brandy"><button
+              class=" Button3">GO</button></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column high">
+      <div class="content">
+        <img class="productImg" src="assets/FairIndingoSliper.png" alt="Nature">
+        <h4>Australian Shearling Clog Slipper</h4>
+        <img class="rating" src="assets/4-stars.png">
+        <img class="logos" src="assets/quince-logo-bigger-file.png">
+
+
+        <h6 id="sus">sustainability score: </h6>
+        <div class='container'>
+          <svg width='200' height='150' class='chart-container'>
+            <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+            <circle cx='95' cy='35' r='50' class='front' fill='none' />
+            <g class='text'>
+              <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>65%</text>
+            </g>
+          </svg>
+        </div>
+        <h6>Price: $49.90</h6>
+
+        <div class="buttonBlock">
+          <a href="https://www.quince.com/women/australian-shearling-slipper-clog"><button
+              class="Button3">GO</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column high">
+      <div class="content">
+        <img class="productImg" src="assets/EverlaneSweaterDress.png" alt="Nature">
+
+        <h4>The Viscose Mock Neck Top</h4>
+        <img class="rating" src="assets/4-stars.png">
+        <img class="logos" src="assets/Everlane_logo.png">
+        <h6 id="sus">sustainability score: </h6>
+
+
+        <div class='container1'>
+          <svg width='200' height='150' class='chart-container'>
+            <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+            <circle cx='95' cy='35' r='50' class='front' fill='none' />
+            <g class='text'>
+              <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>55%</text>
+            </g>
+          </svg>
+        </div>
+        <h6>Price: $98.00</h6>
+
+        <div class="buttonBlock">
+          <a
+            href="https://www.everlane.com/products/womens-viscose-mock-neck-tank-top-black?collection=womens-sweaters"><button
+              class="Button3">GO</button></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column med">
+      <div class="content">
+        <img class="productImg" src="assets/H&Msweater.png" alt="Car">
+        <h4>Fluffy Bouclé-knit Cardigan</h4>
+        <img class="rating" src="assets/4-stars.png">
+        <img class="logos" src="assets/H&M-Logo.svg.png">
+        <h6 id="sus">sustainability score: </h6>
+
+        <div class='container2'>
+          <svg width='200' height='150' class='chart-container'>
+            <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+            <circle cx='95' cy='35' r='50' class='front' fill='none' />
+            <g class='text'>
+              <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>48%</text>
+            </g>
+          </svg>
+        </div>
+
+
+
+        <h6>Price: $35.70</h6>
+
+        <div class="buttonBlock">
+          <a
+            href="https://www2.hm.com/en_us/productpage.1203074001.html?gad_source=1&gclid=Cj0KCQiA5fetBhC9ARIsAP1UMgHaWp2SBdvbTTlwV9KgYnutsuGL1xptLmZIxBbuLCYA86tSxOMS0noaAhoIEALw_wcB"><button
+              class="Button3">GO</button></a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="column med">
+      <div class="content">
+        <img class="productImg" src="assets/H&Mshirt.png" alt="Car">
+        <h4>Ruffle-trimmed Rib-knit Top</h4>
+        <img class="rating" src="assets/3-stars.png">
+        <img class="logos" src="assets/H&M-Logo.svg.png">
+        <h6 id="sus">sustainability score:</h6>
+
+
+        <div class='container4'>
+          <svg width='200' height='150' class='chart-container'>
+            <circle cx='60' cy='60' r='50' class='back' fill='none' class='back' />
+            <circle cx='95' cy='35' r='50' class='front' fill='none' />
+            <g class='text'>
+              <text x='60' y='60' alignment-baseline="central" text-anchor="middle" id='percentage'>44%</text>
+            </g>
+          </svg>
+        </div>
+
+
+
+        <h6>Price: $29.75</h6>
+        <div class="buttonBlock">
+          <a href="https://www2.hm.com/en_us/productpage.1214761002.html"><button class="Button3">GO</button></a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="column low">
+      <div class="content">
+        <img class="productImg" src="assets/sheinTop.png" alt="Car">
+        <h4>Solid Tie Back Halter Top</h4>
+        <img class="logos" src="assets/Shein-logo.png">
+        <h6 id="sus">sustainability score: 39%</h6>
+        <img class="rating" src="assets/3-stars.png">
+        <h6>Price: 14.99</h6>
+
+        <div class="buttonBlock">
+          <a href="https://www2.hm.com/en_us/productpage.1214761002.html"><button class=" Button3">GO</button></a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="column low">
+      <div class="content">
+        <img class="productImg" src="assets/H&Mjean.png" alt="Car">
+        <h4>Wide High Jeans</h4>
+        <img class="logos" src="assets/H&M-Logo.svg.png">
+        <h6 id="sus">sustainability score: 39%</h6>
+        <img class="rating" src="assets/3-stars.png">
+        <h6>Price: $16.99</h6>
+
+        <div class="buttonBlock">
+          <a href="https://www2.hm.com/en_us/productpage.1214761002.html"><button class=" Button3">GO</button></a>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- END GRID -->
+  </div>
+  <script src="Clothing.js"></script>
+</body>
+
+</html>
